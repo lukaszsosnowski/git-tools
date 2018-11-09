@@ -1,0 +1,15 @@
+1. Rozpakować do katalogu domowego
+2. Wstawić w ~/.bashrc
+alias p="~/git-tools/git-commit.sh"
+alias t="~/git-tools/test-task.sh"
+alias c="~/git-tools/new-branch.sh"
+3. Przeładować basha
+
+Używanie:
+p - push bez dodatkowego tekstu, sam wstawia numer pushowanego zadania w message
+p Komentarz Testowy - doda dodatkowy message po numerze zadania czyli całość na githubie wygląda "PAK-4438 Komentarz Testowy" - uwaga: nie używamy cudzysłowów!
+
+t PAK-4438 - przełączy nas na brancha
+
+c PAK-4438 - utworzy brancha trackowanego z mastera
+c PAK-4438 PAK-4437 - utworzy brancha trackowanego z PAK-4437
